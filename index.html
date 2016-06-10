@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang=en>
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>DURATION::Adlink</title>
+
+    <!--Stylesheets-->
+    <link rel="stylesheet" type="text/css" href="foundation/css/normalize.css">
+    <link rel="stylesheet" href="foundation/foundation-icons/foundation-icons.css" />
+    <link rel="stylesheet" href="foundation/css/foundation.min.css">
+    <link rel="stylesheet" type="text/css" href=css/custom_styles.css>
+    <link rel="stylesheet" href="css/duration.css">
+    <link rel="stylesheet" type="text/css" href="foundation-datepicker/css/foundation-datepicker.css">
+
+    <!----------------------------------------->
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,100,100italic,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+<!----------------------------------------->
+
+</head>
+
+<body>
+<div id="wrapper" class="expanded row columns">
+    <div id="page1" class="page1 ">
+
+        <div class="cont center-h">
+
+            <div class="row columns f-center  ttl">
+                <h2>Calculate Duration Between Two Dates</h2>
+            </div>
+            <!-- datepickerdivs -->
+            <div id="pick" class="row columns f-center pick" >
+                <table style="padding: 10px; color: black; margin-top: 30px">
+                    <tr>
+                        <td>
+                            From Date
+                        </td>
+                        <td>
+                            <input value="dd/mm/yyyy" id="txtFromDate" >
+                        </td>
+                        <td>
+                            To Date
+                        </td>
+                        <td>
+                            <input value="dd/mm/yyyy" id="txtToDate" >
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="row columns f-center" >
+                <a id="btnCalc" class="button"
+                Style="background-color: #5b5b5b; color: White; padding: 10px 20px;">Calculate</a>
+            </div>
+
+
+
+            <!-- durations -->
+            <div id="durations" class="row columns f-center" >
+                <table  id="tblResults" visible="true">
+                    <tr>
+                        <td>
+                            Years :
+                        </td>
+                        <td id="tdYear" class="dur">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Months :
+                        </td>
+                        <td id="tdMonths" class="dur">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Days :
+                        </td>
+                        <td id="tdDays" class="dur">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Hours :
+                        </td>
+                        <td id="tdHrs" class="dur">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Minutes :
+                        </td>
+                        <td id="tdminuts" class="dur">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Seconds :
+                        </td>
+                        <td id="tdseconds" class="dur">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Total Milliseconds :
+                        </td>
+                        <td id="tdmileSec" class="dur">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div> <!-- end page 1-->
+
+<!-- ========================================================= -->
+</div> <!--- end wrapper -->
+
+<!---------------------------------------------------------------------->
+    <!--- Scripts ----->
+
+    <script type="text/javascript" src="foundation/js/vendor/jquery.min.js"></script>
+    <script type="text/javascript" src="foundation/js/vendor/what-input.min.js"></script>
+    <script type="text/javascript" src="foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="foundation-datepicker/js/foundation-datepicker.min.js"></script>
+    <script type="text/javascript" src="js/foundation-datepicker-setter.js"></script>
+    <script type="text/javascript" src="js/duration.js"></script>
+<!---------------------------------------------------------------------->
+</body>
+</html>
